@@ -16,12 +16,3 @@ if [[ $choice == "y" ]]; then
     echo "Random email addresses:"
     grep -oE "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b" "$file_path" | shuf -n 10
 fi
-
-echo "Do you want to scan for unique phone numbers? (y/n)"
-read choice
-
-if [[ $coice == "y" ]]; then
-    echo "Total unique phone numbers in the file:"
-    grep -oE "\b\d{9,11}\b" "$file_path" | sort | uniq -c | wc -l | awk '{print $1}' | numfmt --grouping
-fi
-
