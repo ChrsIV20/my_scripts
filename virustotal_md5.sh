@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Replace <YOUR_API_KEY> with your VirusTotal API key
-API_KEY="02c6255a76b254eec4be1d50cd071556fd424ccf1b28985959e32d5fc7844d11"
+API_KEY="<YOUR_API_KEY>"
 
 # Prompt for the MD5 hash
 read -p "Enter the MD5 hash: " MD5_HASH
