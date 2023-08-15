@@ -4,7 +4,7 @@ import re
 import vt
 
 # Prompt for the API key
-api_key = "02c6255a76b254eec4be1d50cd071556fd424ccf1b28985959e32d5fc7844d11"
+api_key = "<YOUR_API_KEY>"
 
 # Create a VirusTotal API client
 client = vt.Client(api_key)
